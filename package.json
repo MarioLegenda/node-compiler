@@ -1,11 +1,17 @@
 {
-  "name": "compiler",
+  "name": "node-compiler",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "author": "Mario Skrlec",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --bail -R mocha-pretty-spec-reporter 'tests/**/*.js'"
   },
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "faker": "^4.1.0",
+    "mocha": "^6.2.3",
+    "mocha-pretty-spec-reporter": "0.1.0-beta.2"
+  }
 }
